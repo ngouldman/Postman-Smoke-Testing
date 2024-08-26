@@ -1,0 +1,11 @@
+services:
+  app:
+    image: postman/newman:alpine
+    container_name: postman-smoke-tests
+    build: 
+      context: .
+    ports:
+      - "8000:8000"
+    command: run https://www.postman.com/collections/cb208e7e64056f5294e5
+
+   
