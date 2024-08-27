@@ -37,4 +37,3 @@ workflows:
   default:
     jobs:
       - smoke-test
-        <<: *always_run
